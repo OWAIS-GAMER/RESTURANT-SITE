@@ -1,0 +1,250 @@
+/* Solid Navbar */
+.custom-navbar {
+  background-color: #2a1b17;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #fdf6e3;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #d4af37;
+}
+
+.custom-offcanvas {
+  background-color: rgba(42, 27, 23, 0.95);
+  color: #fdf6e3;
+}
+
+body {
+  background: linear-gradient(to bottom, #3e2723, #2a1b17);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fdf6e3;
+  font-family: 'Open Sans', sans-serif;
+  padding: 70px 0 0 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Buttons */
+.btn {
+  background-color: #d4af37;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #a0522d;
+}
+
+/* Links */
+a {
+  color: #d4af37;
+}
+
+a:hover {
+  color: #a0522d;
+}
+
+/* Section Background */
+section {
+  background-color: #3e2723;
+  padding: 40px;
+}
+
+/* Cards */
+.card {
+  background-color: #5A3B34;
+  color: #fdf6e3;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #2a1b17;
+  color: #fdf6e3;
+  padding: 20px 0;
+}
+
+input, textarea, select {
+  background-color: #3e2723;
+  color: #fdf6e3;
+  border: 1px solid #d4af37;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #a0522d;
+}
+
+/* Dropdown Menu */
+.navbar .dropdown-menu {
+  background-color: #3e2723;
+  border: none;
+}
+
+.navbar .dropdown-item {
+  color: #fdf6e3;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #2a1b17;
+  color: #d4af37;
+}
+
+.navbar .dropdown-divider {
+  border-color: #2a1b17;
+}
+
+/* Hero */
+.hero {
+  background-color: #2a1b17;
+  border-radius: 0;
+  color: #fdf6e3;
+}
+
+/* Images */
+img {
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h2 {
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 1rem;
+}
+
+.nav-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+}
+
+/* Footer */
+.custom-footer {
+  background-color: #2a1b17;
+  color: #fdf6e3;
+  padding: 2rem 0;
+}
+
+.custom-footer h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-gold {
+  color: #d4af37 !important;
+}
+
+.social-icon {
+  font-size: 1.4rem;
+  color: #fdf6e3;
+  margin-right: 0.75rem;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #d4af37;
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+
+/* Navbar logo */
+.custom-navbar .navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* Carousel images */
+.carousel-inner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Gallery images */
+.gallery-col img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Menu card images */
+#Menu .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Review card images */
+#Reviews .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Hero image */
+.hero-img {
+  max-height: 280px;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .nav-title { font-size: 1.6rem; }
+  .carousel-inner img { height: 320px; }
+  .gallery-col img { height: 220px; }
+}
+
+@media (min-width: 768px) {
+  .nav-title { font-size: 2rem; }
+  .carousel-inner img { height: 420px; }
+  .gallery-col img { height: 240px; }
+  .hero-img { max-height: none; }
+}
+
+@media (min-width: 992px) {
+  .nav-title { font-size: 2.5rem; }
+  .carousel-inner img { height: 500px; }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 1rem !important;
+  }
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  .hero .fs-4 {
+    font-size: 1.1rem !important;
+  }
+  .custom-footer .row > div {
+    text-align: center;
+  }
+  #Menu .card-img-top,
+  #Reviews .card img,
+  .gallery-col img {
+    height: 200px;
+  }
+}
